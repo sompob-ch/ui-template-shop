@@ -31,4 +31,14 @@ run http server
 npm run start-server
 ```
 
+open web
+
+```
+open http://localhost:8080
+
+open directory /app/html
+```
+
 ---
+
+
