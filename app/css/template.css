@@ -1,0 +1,233 @@
+body {
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0 24px;
+}
+
+.section {
+  margin-bottom: 64px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.menu-bar-wrapper {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  height: 20px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item:not(:first-child) {
+  margin-left: 24px;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  color: #f87060;
+}
+
+.nav-link:active {
+  opacity: 0.5;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.hero-section {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0)), url("/app/img/hero-background.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 720px;
+}
+
+.hero-title {
+  font-size: 64px;
+  font-weight: 600;
+  padding-top: 128px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.collection-list {
+  display: grid;
+  grid-gap: 16px;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "first first second third" "first first fourth fourth";
+}
+
+@media screen and (max-width: 768px) {
+  .collection-list {
+    grid-template-areas: "first first second second" "third third fourth fourth";
+  }
+}
+@media screen and (max-width: 512px) {
+  .collection-list {
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "first" "second" "third" "fourth";
+  }
+}
+.collection-item {
+  background-size: cover;
+  background-position: 50% 82%;
+  padding: 24px;
+  border-radius: 8px;
+}
+
+.collection-item-one {
+  grid-area: first;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.9), rgba(0, 0, 0, 0.1)), url("/app/img/classic-collection.jpg");
+}
+
+.collection-item-two {
+  grid-area: second;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.2)), url("/app/img/sport-collection.jpg");
+}
+
+.collection-item-three {
+  grid-area: third;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.3)), url("/app/img/sandal-collection.jpg");
+}
+
+.collection-item-four {
+  grid-area: fourth;
+  background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.2)), url("/app/img/casual-collection.jpg");
+}
+
+.collection-item-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 32px;
+}
+
+.product-item {
+  width: 100%;
+  position: relative;
+}
+
+.product-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.product-item-image {
+  width: 100%;
+  height: 250px;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.price {
+  margin-top: 24px;
+}
+.price::after {
+  content: " Baht";
+}
+
+.product-label {
+  background-color: #f87060;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px;
+  width: fit-content;
+  top: 24px;
+  left: -8px;
+  position: absolute;
+}
+
+.about-content {
+  display: flex;
+}
+
+.about-image {
+  width: 50%;
+  height: 320px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 24px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-description {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.button {
+  display: block;
+  background-color: #f87060;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: fit-content;
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+.button:hover {
+  opacity: 0.6;
+}
+.button:active {
+  opacity: 0.9;
+}
+
+.social-list {
+  position: fixed;
+  right: 72px;
+  bottom: 60px;
+}
+.social-list .social-logo {
+  width: 60px;
+}
+
+/*# sourceMappingURL=template.css.map */

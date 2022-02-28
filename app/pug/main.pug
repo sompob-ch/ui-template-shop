@@ -1,0 +1,13 @@
+doctype html
+html(lang="en")
+    head
+        include _layout/main.pug
+    body
+        include _layout/header.pug
+        main
+            include components/hero.pug
+            include components/collection.pug
+            include components/product.pug
+            include _mixin/social-list.pug
+            include components/about.pug
+    include _layout/footer.pug

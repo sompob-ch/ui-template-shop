@@ -1,0 +1,20 @@
+{
+  "name": "ui-template-shop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-compile": "sass --watch app/sass/main.sass app/css/template.css",
+    "pug-compile": "pug -w app/pug/main.pug -o app/html",
+    "start-server": "http-server ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.0",
+    "pug": "^3.0.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.49.8"
+  }
+}
