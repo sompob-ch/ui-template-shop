@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass-compile": "sass --watch app/sass/main.sass app/css/template.css",
-    "pug-compile": "pug -w app/pug/main.pug -o app/html",
-    "start-server": "http-server ."
+    "pug-compile": "pug -w app/pug/index.pug -o app/html",
+    "start-server": "http-server .",
+    "build": "sass app/sass/main.sass app/css/template.css && pug app/pug/index.pug -o app/html"
   },
   "author": "",
   "license": "ISC",
